@@ -31,12 +31,11 @@
 </head>
 <body>
 
-
 	<div class="container-contact100">
 		<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
 
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form">
+			<form action="/action_page.php" method="post" class="contact100-form validate-form">
 				<span class="contact100-form-title">
 					Pesquisa com participantes do programa
 				</span>
@@ -57,28 +56,30 @@
 				<div class="texto12"> Sobre o início do curso responda as seguintes questões:</div><br>
 
 				<div class="wrap-input100 validate-input"></class>
-				<label for="prog">Você já tinha algum conhecimento com Python:</label><br>
-				<select name="prog" id="prog">
+				<label for="question1">Você já tinha algum conhecimento com Python:</label><br>
+				<select name="question1" id="question1">
 					<option value="Yes">Sim</option>
 					<option value="No">Não</option>
 				</select>
 				</div>
 
 				<div class="wrap-input100 validate-input"></class>
-				<label for="prog">Você já tinha algum conhecimento com MySQL:</label><br>
-				<select name="prog" id="prog">
+				<label for="question2">Você já tinha algum conhecimento com MySQL:</label><br>
+				<select name="question2" id="question2">
 					<option value="Yes">Sim</option>
 					<option value="No">Não</option>
 				</select>
 				</div>
 
 				<div class="wrap-input100 validate-input"></class>
-				<label for="prog">Você já tinha algum conhecimento com GCP (Google Cloud Computing):</label><br>
-				<select name="prog" id="prog">
+				<label for="question3">Você já tinha algum conhecimento com GCP (Google Cloud Computing):</label><br>
+				<select name="question3" id="question3">
 					<option value="Yes">Sim</option>
 					<option value="No">Não</option>
 				</select>
 				</div>
+
+
 
 				<div class="container-contact100-form-btn">
 					<button class="contact100-form-btn">
@@ -90,8 +91,14 @@
 		</div>
 	</div>
 
+	
+	<label for="fname">First name:</label>
+	<input type="text" id="fname" name="fname"><br><br>
+	<label for="lname">Last name:</label>
+	<input type="text" id="lname" name="lname"><br><br>
+	<input type="submit" value="Submit">
 
-
+	
 	<div id="dropDownSelect1"></div>
 
 <!--===============================================================================================-->
