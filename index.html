@@ -35,19 +35,19 @@
 		<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
 
 		<div class="wrap-contact100">
-			<form action="https://us-central1-my-project-1545778557737.cloudfunctions.net/function-1" method="post" class="contact100-form validate-form">
+			<form action="https://us-central1-my-project-1545778557737.cloudfunctions.net/function-1" method="get" class="contact100-form validate-form">
 				<span class="contact100-form-title">
 					Pesquisa com participantes do programa
 				</span>
 
 				<div class="wrap-input100 validate-input" data-validate="Escreva seu nome">
-					<input class="input100" type="text" name="name" placeholder="Nome Completo">
+					<input class="input100" type="text" name="Name" placeholder="Nome Completo">
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 validate-input"></class>
-					<label for="class">Qual a sua turma dentro do programa Data&Analytics</label><br>
-					<select name="class" id="class">
+					<label for="Class">Qual a sua turma dentro do programa Data&Analytics</label><br>
+					<select name="Class" id="Class">
 						<option value="1">Turma 1</option>
 						<option value="2">Turma 2</option>
 					</select>
@@ -56,33 +56,31 @@
 				<div class="texto12"> Sobre o início do curso responda as seguintes questões:</div><br>
 
 				<div class="wrap-input100 validate-input"></class>
-				<label for="question1">Você já tinha algum conhecimento com Python:</label><br>
-				<select name="question1" id="question1">
+				<label for="Python">Você já tinha algum conhecimento com Python:</label><br>
+				<select name="Python" id="Python">
 					<option value="Yes">Sim</option>
 					<option value="No">Não</option>
 				</select>
 				</div>
 
 				<div class="wrap-input100 validate-input"></class>
-				<label for="question2">Você já tinha algum conhecimento com MySQL:</label><br>
-				<select name="question2" id="question2">
+				<label for="MySQL">Você já tinha algum conhecimento com MySQL:</label><br>
+				<select name="MySQL" id="MySQL">
 					<option value="Yes">Sim</option>
 					<option value="No">Não</option>
 				</select>
 				</div>
 
 				<div class="wrap-input100 validate-input"></class>
-				<label for="question3">Você já tinha algum conhecimento com GCP (Google Cloud Computing):</label><br>
-				<select name="question3" id="question3">
+				<label for="GCP">Você já tinha algum conhecimento com GCP (Google Cloud Computing):</label><br>
+				<select name="GCP" id="GCP">
 					<option value="Yes">Sim</option>
 					<option value="No">Não</option>
 				</select>
 				</div>
-
-
 
 				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
+					<button type='submit' class="contact100-form-btn">
 						Enviar
 					</button>
 				</div>
